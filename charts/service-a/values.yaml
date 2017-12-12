@@ -6,6 +6,8 @@ image:
   repository: service-a
   tag: latest
   pullPolicy: IfNotPresent
+  # Secret must be manually created in the namespace.
+  # pullSecret: my-registry-secret
 service:
   name: service-a
   type: ClusterIP
